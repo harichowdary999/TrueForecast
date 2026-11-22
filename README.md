@@ -1,4 +1,4 @@
-# SalesAI - RevOps & Revenue Forecasting Platform
+# TrueForecast - RevOps & Revenue Forecasting Platform
 
 A full-featured B2B Revenue Operations & Predictive Forecasting platform built with React 19, TypeScript, Vite, and Tailwind CSS.
 
@@ -17,7 +17,7 @@ A full-featured B2B Revenue Operations & Predictive Forecasting platform built w
 │   │   ├── ReportsView.tsx           # CSV Export & Executive Briefs
 │   │   ├── RevenueForecasting.tsx    # Quarterly Pacing & Scenarios
 │   │   ├── SalesPipelineAnalytics.tsx# 5-Stage Conversion Funnel
-│   │   ├── Sidebar.tsx               # SalesAI Navigation
+│   │   ├── Sidebar.tsx               # TrueForecast Navigation
 │   │   └── TopHeader.tsx             # Header controls & Search
 │   ├── data/
 │   │   └── mockData.ts    # Seed data & enterprise accounts

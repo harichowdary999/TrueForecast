@@ -8,5 +8,7 @@
     "**/.DS_Store": true,
     "**/node_modules": false,
     "**/dist": true
-  }
+  },
+  "python.terminal.useEnvFile": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/bin/python"
 }

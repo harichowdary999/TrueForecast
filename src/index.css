@@ -1,51 +1,75 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-
-  --color-brand-primary: #3525cd;
-  --color-brand-accent: #4f46e5;
-  --color-brand-dark: #0b1c30;
-  --color-surface-bg: #f8f9ff;
-  --color-surface-card: #ffffff;
-  --color-surface-border: #e2e8f0;
+:root {
+  --bg-canvas: #eee6da;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f7f3ed;
+  --border-warm: #dcd1c1;
+  --text-primary: #1f1d1a;
+  --text-secondary: #6b645c;
+  --accent-primary: #157f68;
+  --accent-secondary: #c86d51;
+  --badge-positive-bg: #e2f2ee;
+  --badge-positive-text: #115e4d;
+  --badge-warning-bg: #faefd4;
+  --badge-warning-text: #8a5a00;
+  --badge-error-bg: #fae3e3;
+  --badge-error-text: #9e2a2b;
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: #f8f9ff;
-  color: #0b1c30;
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-canvas: #eee6da;
+  --color-surface: #ffffff;
+  --color-subtle: #f7f3ed;
+  --color-border-warm: #dcd1c1;
+  --color-text-primary: #1f1d1a;
+  --color-text-secondary: #6b645c;
+  --color-accent-primary: #157f68;
+  --color-accent-secondary: #c86d51;
+  --color-terracotta: #c86d51;
+  --color-terracotta-hover: #b35c42;
+  --color-teal: #157f68;
+}
+
+*,
+*::before,
+*::after {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body, #root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #eee6da;
+  color: #1f1d1a;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-display {
-  font-family: var(--font-display);
-}
-
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
-/* Custom scrollbars */
+/* Custom sleek warm scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #dcd1c1;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #c8bda9;
 }
